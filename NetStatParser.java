@@ -30,7 +30,7 @@ public class NetStatParser
                 }
             } catch (Exception e)
             {
-                System.out.println("Oops");
+                e.printStackTrace();
                 return;
             }
         } else
@@ -40,7 +40,7 @@ public class NetStatParser
                 lines = Files.lines(Paths.get(args[0])).toList();
             } catch (Exception e)
             {
-                System.out.println("Oops 2");
+                e.printStackTrace();
                 return;
             }
         }
