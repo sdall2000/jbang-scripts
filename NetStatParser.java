@@ -12,11 +12,9 @@ public class NetStatParser
 {
     public static void main(String[] args)
     {
-        System.out.println("Start");
         List<String> lines;
         if (args.length == 0)
         {
-            System.out.println("No arguments");
             lines = new ArrayList<>();
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
@@ -25,7 +23,6 @@ public class NetStatParser
             {
                 while ((line = reader.readLine()) != null)
                 {
-                    System.out.println(line);
                     lines.add(line);
                 }
             } catch (Exception e)
@@ -44,8 +41,6 @@ public class NetStatParser
                 return;
             }
         }
-
-        System.out.println("Done reading");
 
         String protocol = "";
         String localAddress = "";
